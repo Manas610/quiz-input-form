@@ -1,6 +1,8 @@
+import './app.css'
+
 function App() {
   return (
-    <>
+    <div>
     <h1>Enter The Quiz Questions</h1>
     <form>
       <label for="question">Enter Question:</label>
@@ -9,12 +11,17 @@ function App() {
       <br/>
       <br/>
 
-      <label for="subject">Subject:</label>
+      <label for="subject">Subject:&emsp;</label>
       <select id="subject" name="subject">
         <option value="history">History</option>
         <option value="geography">Geography</option>
         <option value="aptitude">aptitude</option>
       </select>
+      <br/>
+      <br/>
+
+      <label for="level">Level:&emsp;</label>
+      <input type="number" name="level" id="level" min="1" max="10" defaultValue="1"/>
       <br/>
       <br/>
 
@@ -36,7 +43,7 @@ function App() {
 
       <input type="submit"></input>
     </form>
-    </>
+    </div>
   );
 }
 
